@@ -1,0 +1,412 @@
+{
+  "categories": [
+    { "id": 0, "name": "All" },
+    { "id": 1, "name": "Hot Coffees" },
+    { "id": 2, "name": "Cold Coffees" },
+    { "id": 3, "name": "Frappuccino Blends" },
+    { "id": 4, "name": "Pastries" }
+  ],
+
+  "products": [
+    {
+      "id": 1,
+      "category": "Hot Coffees",
+      "name": "Caffè Americano",
+      "description": "Rich espresso with hot water for a deep, flavorful cup.",
+      "price": 3.5,
+      "sizes": ["Tall", "Grande", "Venti"],
+      "image": "/pic/Caffè Americano.webp",
+      "isFavorite": false
+    },
+    {
+      "id": 2,
+      "category": "Hot Coffees",
+      "name": "Cappuccino",
+      "description": "Espresso, steamed milk, and foam blended to perfection.",
+      "price": 4.0,
+      "sizes": ["Tall", "Grande", "Venti"],
+      "image": "/pic/Cappuccino.jpg",
+      "isFavorite": true
+    },
+    {
+      "id": 3,
+      "category": "Hot Coffees",
+      "name": "Caffè Latte",
+      "description": "Smooth blend of espresso and steamed milk with a light foam layer.",
+      "price": 4.2,
+      "sizes": ["Tall", "Grande", "Venti"],
+      "image": "/pic/Caffè Latte.avif",
+      "isFavorite": false
+    },
+    {
+      "id": 4,
+      "category": "Hot Coffees",
+      "name": "Espresso",
+      "description": "A bold, rich shot of pure espresso.",
+      "price": 2.8,
+      "sizes": ["Solo", "Doppio"],
+      "image": "/pic/Espresso.avif",
+      "isFavorite": false
+    },
+    {
+      "id": 5,
+      "category": "Hot Coffees",
+      "name": "Flat White",
+      "description": "Velvety steamed milk poured over ristretto shots of espresso.",
+      "price": 4.6,
+      "sizes": ["Tall", "Grande"],
+      "image": "/pic/Flat White.avif",
+      "isFavorite": true
+    },
+    {
+      "id": 6,
+      "category": "Hot Coffees",
+      "name": "Mocha",
+      "description": "Espresso, bittersweet mocha sauce, and steamed milk topped with whipped cream.",
+      "price": 4.7,
+      "sizes": ["Tall", "Grande", "Venti"],
+      "image": "/pic/caffe mocha.jpg",
+      "isFavorite": false
+    },
+    {
+      "id": 7,
+      "category": "Hot Coffees",
+      "name": "Caramel Macchiato",
+      "description": "Espresso with vanilla-flavored syrup and milk topped with caramel drizzle.",
+      "price": 4.8,
+      "sizes": ["Tall", "Grande", "Venti"],
+      "image": "/pic/Caramel Macchiato.jpg",
+      "isFavorite": true
+    },
+    {
+      "id": 8,
+      "category": "Hot Coffees",
+      "name": "Chai Tea Latte",
+      "description": "A spiced black tea infused with cinnamon, clove, and steamed milk.",
+      "price": 4.3,
+      "sizes": ["Tall", "Grande", "Venti"],
+      "image": "/pic/Chai Tea Latte.jpg",
+      "isFavorite": false
+    },
+    {
+      "id": 9,
+      "category": "Hot Coffees",
+      "name": "White Chocolate Mocha",
+      "description": "Espresso, white chocolate sauce, and steamed milk topped with whipped cream.",
+      "price": 5.0,
+      "sizes": ["Tall", "Grande", "Venti"],
+      "image": "/pic/White Chocolate Mocha.jpg",
+      "isFavorite": true
+    },
+    {
+      "id": 10,
+      "category": "Hot Coffees",
+      "name": "Cinnamon Dolce Latte",
+      "description": "Espresso with steamed milk, cinnamon dolce syrup, and whipped cream.",
+      "price": 4.9,
+      "sizes": ["Tall", "Grande", "Venti"],
+      "image": "/pic/Cinnamon Dolce Latte.jpg",
+      "isFavorite": false
+    },
+    {
+      "id": 11,
+      "category": "Cold Coffees",
+      "name": "Iced Coffee",
+      "description": "Freshly brewed coffee served over ice for a refreshing taste.",
+      "price": 3.8,
+      "sizes": ["Tall", "Grande", "Venti"],
+      "image": "/pic/Iced Coffee.jpg",
+      "isFavorite": false
+    },
+    {
+      "id": 12,
+      "category": "Cold Coffees",
+      "name": "Iced Latte",
+      "description": "Smooth espresso blended with milk and poured over ice.",
+      "price": 4.2,
+      "sizes": ["Tall", "Grande", "Venti"],
+      "image": "/pic/Iced Latte.jpg",
+      "isFavorite": true
+    },
+    {
+      "id": 13,
+      "category": "Cold Coffees",
+      "name": "Iced Mocha",
+      "description": "Espresso, mocha sauce, milk, and ice topped with whipped cream.",
+      "price": 4.6,
+      "sizes": ["Tall", "Grande", "Venti"],
+      "image": "/pic/Iced Mocha.jpg",
+      "isFavorite": false
+    },
+    {
+      "id": 14,
+      "category": "Cold Coffees",
+      "name": "Iced Caramel Macchiato",
+      "description": "Vanilla syrup, milk, and espresso over ice with caramel drizzle.",
+      "price": 4.8,
+      "sizes": ["Tall", "Grande", "Venti"],
+      "image": "/pic/Iced Caramel Macchiato.jpg",
+      "isFavorite": true
+    },
+    {
+      "id": 15,
+      "category": "Cold Coffees",
+      "name": "Iced Americano",
+      "description": "Espresso shots topped with cold water and ice.",
+      "price": 3.5,
+      "sizes": ["Tall", "Grande", "Venti"],
+      "image": "/pic/Iced Americano.jpg",
+      "isFavorite": false
+    },
+    {
+      "id": 16,
+      "category": "Cold Coffees",
+      "name": "Cold Brew",
+      "description": "Slow-steeped, ultra-smooth cold coffee for a bold yet balanced flavor.",
+      "price": 4.5,
+      "sizes": ["Tall", "Grande", "Venti"],
+      "image": "/pic/Cold Brew.jpg",
+      "isFavorite": false
+    },
+    {
+      "id": 17,
+      "category": "Cold Coffees",
+      "name": "Vanilla Sweet Cream Cold Brew",
+      "description": "Cold brew coffee topped with vanilla sweet cream for a smooth finish.",
+      "price": 4.9,
+      "sizes": ["Tall", "Grande", "Venti"],
+      "image": "/pic/Vanilla Sweet Cream Cold Brew.jpg",
+      "isFavorite": true
+    },
+    {
+      "id": 18,
+      "category": "Cold Coffees",
+      "name": "Nitro Cold Brew",
+      "description": "Infused with nitrogen for a naturally sweet, creamy flavor.",
+      "price": 5.0,
+      "sizes": ["Tall", "Grande"],
+      "image": "/pic/Nitro Cold Brew.jpg",
+      "isFavorite": false
+    },
+    {
+      "id": 19,
+      "category": "Cold Coffees",
+      "name": "Iced Shaken Espresso",
+      "description": "Espresso shaken with ice and sweetened, topped with milk.",
+      "price": 4.7,
+      "sizes": ["Tall", "Grande", "Venti"],
+      "image": "/pic/Iced Shaken Espresso.jpg",
+      "isFavorite": true
+    },
+    {
+      "id": 20,
+      "category": "Cold Coffees",
+      "name": "Iced White Chocolate Mocha",
+      "description": "Espresso with white chocolate, milk, and ice topped with whipped cream.",
+      "price": 5.0,
+      "sizes": ["Tall", "Grande", "Venti"],
+      "image": "/pic/Iced White Chocolate Mocha.jpg",
+      "isFavorite": false
+    },
+    {
+      "id": 21,
+      "category": "Frappuccino Blends",
+      "name": "Coffee Frappuccino",
+      "description": "Blended coffee, milk, and ice topped with whipped cream.",
+      "price": 4.8,
+      "sizes": ["Tall", "Grande", "Venti"],
+      "image": "/pic/Coffee Frappuccino.jpg",
+      "isFavorite": false
+    },
+    {
+      "id": 22,
+      "category": "Frappuccino Blends",
+      "name": "Caramel Frappuccino",
+      "description": "Blended coffee with caramel syrup, milk, and ice topped with whipped cream.",
+      "price": 5.0,
+      "sizes": ["Tall", "Grande", "Venti"],
+      "image": "/pic/Caramel Frappuccino.jpg",
+      "isFavorite": true
+    },
+    {
+      "id": 23,
+      "category": "Frappuccino Blends",
+      "name": "Mocha Frappuccino",
+      "description": "Blended coffee, mocha sauce, milk, and ice with whipped cream topping.",
+      "price": 5.2,
+      "sizes": ["Tall", "Grande", "Venti"],
+      "image": "/pic/Mocha Frappuccino.jpg",
+      "isFavorite": false
+    },
+    {
+      "id": 24,
+      "category": "Frappuccino Blends",
+      "name": "Java Chip Frappuccino",
+      "description": "Blended mocha sauce, coffee, milk, ice, and chocolate chips.",
+      "price": 5.4,
+      "sizes": ["Tall", "Grande", "Venti"],
+      "image": "/pic/Java Chip Frappuccino.jpg",
+      "isFavorite": true
+    },
+    {
+      "id": 25,
+      "category": "Frappuccino Blends",
+      "name": "White Chocolate Mocha Frappuccino",
+      "description": "White chocolate sauce, coffee, milk, and ice topped with whipped cream.",
+      "price": 5.3,
+      "sizes": ["Tall", "Grande", "Venti"],
+      "image": "/pic/White Chocolate Mocha Frappuccino.jpg",
+      "isFavorite": false
+    },
+    {
+      "id": 26,
+      "category": "Frappuccino Blends",
+      "name": "Strawberries & Crème Frappuccino",
+      "description": "Strawberry puree blended with milk and ice, topped with whipped cream.",
+      "price": 5.0,
+      "sizes": ["Tall", "Grande", "Venti"],
+      "image": "/pic/Strawberries & Crème Frappuccino.jpg",
+      "isFavorite": true
+    },
+    {
+      "id": 27,
+      "category": "Frappuccino Blends",
+      "name": "Matcha Green Tea Frappuccino",
+      "description": "Blended milk, ice, and matcha for a refreshing green tea taste.",
+      "price": 5.2,
+      "sizes": ["Tall", "Grande", "Venti"],
+      "image": "/pic/Matcha Green Tea Frappuccino.jpg",
+      "isFavorite": false
+    },
+    {
+      "id": 28,
+      "category": "Frappuccino Blends",
+      "name": "Vanilla Bean Crème Frappuccino",
+      "description": "Vanilla bean, milk, and ice topped with whipped cream.",
+      "price": 5.1,
+      "sizes": ["Tall", "Grande", "Venti"],
+      "image": "/pic/Vanilla Bean Crème Frappuccino.jpg",
+      "isFavorite": false
+    },
+    {
+      "id": 29,
+      "category": "Frappuccino Blends",
+      "name": "Double Chocolate Chip Frappuccino",
+      "description": "Rich mocha flavor with chocolate chips blended with milk and ice.",
+      "price": 5.3,
+      "sizes": ["Tall", "Grande", "Venti"],
+      "image": "/pic/Double Chocolate Chip Frappuccino.jpg",
+      "isFavorite": true
+    },
+    {
+      "id": 30,
+      "category": "Frappuccino Blends",
+      "name": "Cookies & Cream Frappuccino",
+      "description": "Blended coffee, milk, ice, and cookie crumbles topped with whipped cream.",
+      "price": 5.4,
+      "sizes": ["Tall", "Grande", "Venti"],
+      "image": "/pic/Cookies & Cream Frappuccino.jpg",
+      "isFavorite": false
+    },
+    {
+      "id": 31,
+      "category": "Pastries",
+      "name": "Blueberry Muffin",
+      "description": "Soft muffin filled with juicy blueberries and sugar crumble.",
+      "price": 2.8,
+      "sizes": [],
+      "image": "/pic/Blueberry Muffin.jpg",
+      "isFavorite": false
+    },
+    {
+      "id": 32,
+      "category": "Pastries",
+      "name": "Chocolate Croissant",
+      "description": "Flaky pastry filled with rich chocolate, baked golden brown.",
+      "price": 3.0,
+      "sizes": [],
+      "image": "/pic/Chocolate Croissant.jpg",
+      "isFavorite": true
+    },
+    {
+      "id": 33,
+      "category": "Pastries",
+      "name": "Butter Croissant",
+      "description": "Classic, buttery, flaky croissant perfect with coffee.",
+      "price": 2.5,
+      "sizes": [],
+      "image": "/pic/Butter Croissant.jpg",
+      "isFavorite": false
+    },
+    {
+      "id": 34,
+      "category": "Pastries",
+      "name": "Cinnamon Roll",
+      "description": "Sweet roll filled with cinnamon and topped with icing.",
+      "price": 3.2,
+      "sizes": [],
+      "image": "/pic/Cinnamon Roll.jpg",
+      "isFavorite": false
+    },
+    {
+      "id": 35,
+      "category": "Pastries",
+      "name": "Banana Bread",
+      "description": "Moist banana bread with a hint of walnut and cinnamon.",
+      "price": 3.0,
+      "sizes": [],
+      "image": "/pic/Banana Bread.jpg",
+      "isFavorite": true
+    },
+    {
+      "id": 36,
+      "category": "Pastries",
+      "name": "Chocolate Chip Cookie",
+      "description": "Soft and chewy cookie loaded with chocolate chips.",
+      "price": 2.0,
+      "sizes": [],
+      "image": "/pic/Chocolate Chip Cookie.jpg",
+      "isFavorite": false
+    },
+    {
+      "id": 37,
+      "category": "Pastries",
+      "name": "Pumpkin Loaf",
+      "description": "Spiced pumpkin bread with warm cinnamon flavor.",
+      "price": 3.4,
+      "sizes": [],
+      "image": "/pic/Pumpkin Loaf.jpg",
+      "isFavorite": true
+    },
+    {
+      "id": 38,
+      "category": "Pastries",
+      "name": "Almond Croissant",
+      "description": "Flaky croissant filled with almond cream and topped with toasted almonds.",
+      "price": 3.5,
+      "sizes": [],
+      "image": "/pic/Almond Croissant.jpg",
+      "isFavorite": false
+    },
+    {
+      "id": 39,
+      "category": "Pastries",
+      "name": "Lemon Loaf",
+      "description": "Moist lemon cake with a sweet lemon glaze.",
+      "price": 3.2,
+      "sizes": [],
+      "image": "/pic/Lemon Loaf.jpg",
+      "isFavorite": false
+    },
+    {
+      "id": 40,
+      "category": "Pastries",
+      "name": "Oatmeal Cookie",
+      "description": "Chewy oatmeal cookie with raisins and cinnamon spice.",
+      "price": 2.3,
+      "sizes": [],
+      "image": "/pic/Oatmeal Cookie.jpg",
+      "isFavorite": true
+    }
+  ]
+}
