@@ -1,22 +1,25 @@
-import { Routes, Route } from "react-router-dom";
 import { useState, useEffect } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
 import useFetch from "./hooks/useFetch";
-import NavBar from "./components/NavBar";
+import Hero from "./components/Hero";
+import Features from "./components/Features";
 import Products from "./components/Products";
-import Main from "./components/MainPage";
-function App() {
-  const { data, loading, error } = useFetch("./data/products.json");
-  const [products, setProducts] = useState([]);
-  const [cart, setCart] = useState([]);
+import ProductsPage from "./pages/ProductsPage";
+import Cart from "./components/Cart";
+import Details from "./components/Details";
+import { CartProvider } from "./context/CartContext";
 
-  // Initialize products when data is loaded
+function App() {
+  const { data, loading, error } = useFetch("/data/products.json");
+  const [products, setProducts] = useState([]);
+  // const [cart, setCart] = useState([]);
   useEffect(() => {
     if (data?.products) {
-      setProducts(data.products);
+      setProducts(data?.products);
     }
   }, [data?.products]);
 
-  // Toggle favorite function - lives in App so it persists across routes
   const toggleFavourite = (id) => {
     setProducts((prevProducts) =>
       prevProducts.map((product) =>
@@ -27,36 +30,60 @@ function App() {
     );
   };
 
-  console.log(data);
+  // console.log(cart);
   return (
-    <>
-      <NavBar />
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <Main
-              categories={data?.categories}
-              products={products}
-              loading={loading}
-              toggleFavourite={toggleFavourite}
+    <div className="App overflow-hidden lg:grid lg:grid-cols-[260px_1fr_1fr]">
+      <CartProvider>
+        <div className="lg:max-w-sm">
+          <Navbar />
+        </div>
+        <div className="lg:col-span-2">
+          <Routes>
+            {/* Home Route - Compose components directly here */}
+            <Route
+              path="/"
+              element={
+                <div className="w-full">
+                  <Hero />
+                  <Features />
+                  <ProductsPage
+                    categories={data?.categories}
+                    products={products}
+                    loading={loading}
+                    toggleFavourite={toggleFavourite}
+                  />
+                </div>
+              }
             />
-          }
-        />
-        <Route
-          path="/products"
-          element={
-            <Products
-              products={products}
-              categories={data?.categories}
-              loading={loading}
-              toggleFavourite={toggleFavourite}
+
+            {/* Products Route - Just Products component */}
+            <Route
+              path="/products"
+              element={
+                <ProductsPage
+                  categories={data?.categories}
+                  products={products}
+                  loading={loading}
+                  toggleFavourite={toggleFavourite}
+                />
+              }
             />
-          }
-        />
-        {/* <Route path="/about" element={<About />} /> */}
-      </Routes>
-    </>
+
+            {/* Cart Route */}
+            <Route path="/cart" element={<Cart />} />
+            <Route
+              path="/details/:id"
+              element={<Details products={products} />}
+            />
+            <Route
+              path="products/details/:id"
+              element={<Details products={products} />}
+            />
+          </Routes>
+        </div>
+      </CartProvider>
+    </div>
   );
 }
+
 export default App;
