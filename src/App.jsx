@@ -71,14 +71,15 @@ function App() {
 
             {/* Cart Route */}
             <Route path="/cart" element={<Cart />} />
+            {/* Details Route */}
             <Route
               path="/details/:id"
               element={<Details products={products} />}
             />
-            <Route
+            {/* <Route
               path="products/details/:id"
               element={<Details products={products} />}
-            />
+            /> */}
           </Routes>
         </div>
       </CartProvider>
