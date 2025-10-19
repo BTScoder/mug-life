@@ -12,7 +12,7 @@ const Cart = () => {
   const total = subtotal + tax;
 
   return (
-    <div className="mt-10 ps-10">
+    <div className="mt-10">
       <h1 className="text-dark-brown text-[30px] font-bold">Your Cart</h1>
       {cart.length === 0 ? (
         <p className="text-gray-600">Your cart is empty</p>

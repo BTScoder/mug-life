@@ -32,7 +32,7 @@ function App() {
 
   // console.log(cart);
   return (
-    <div className="App lg:grid lg:grid-cols-[260px_1fr_1fr]">
+    <div className="App overflow-hidden lg:grid lg:grid-cols-[260px_1fr_1fr]">
       <CartProvider>
         <div className="lg:max-w-sm">
           <NavBar />
