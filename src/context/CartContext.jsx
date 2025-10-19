@@ -34,10 +34,12 @@ export const CartProvider = ({ children }) => {
   const decreaseQuantity = (product) => {
     const existingItem = cart.find((item) => item.id === product.id);
 
-    if (existingItem) {
+    if (existingItem.quantity === 1) {
+      setCart(cart.filter((item) => item.id !== existingItem.id));
+    } else {
       setCart(
         cart.map((item) =>
-          item.id === product.id
+          item.id === existingItem.id
             ? { ...item, quantity: Math.max(item.quantity - 1, 0) }
             : item,
         ),

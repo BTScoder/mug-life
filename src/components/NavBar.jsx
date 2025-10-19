@@ -21,9 +21,11 @@ const NavBar = () => {
       <nav className="mx-auto flex max-w-[1200px] items-center justify-between gap-20 p-4 lg:flex-col lg:py-10">
         <div className="flex items-center gap-4">
           {/* <img src="/images/logo.jpg" alt="Coffee" width={70} height={70} /> */}
-          <h1 className="text-dark-brown text-[30px] font-extrabold">
-            Mug Life
-          </h1>
+          <Link to="/">
+            <h1 className="text-dark-brown text-[30px] font-extrabold">
+              Mug Life
+            </h1>
+          </Link>
         </div>
 
         {/* Desktop Navigation */}

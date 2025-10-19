@@ -32,41 +32,37 @@ const Card = ({ product, favorite, toggleFavourite }) => {
           <p className="mt-1 line-clamp-2 text-sm text-gray-500">
             {product.description}
           </p>
-
-          <div className="mt-6 flex items-center justify-between">
-            <span className="text-dark-brown text-[26px] font-light">
-              ${product.price}
-            </span>
-            <div className="flex items-center gap-6">
-              {inCart ? (
-                <div className="flex items-center gap-4">
-                  <Minus
-                    className="h-6 w-6"
-                    onClick={() => decreaseQuantity(product)}
-                  />
-                  <p>{quantity}</p>
-                  <Plus
-                    className="h-6 w-6"
-                    onClick={() => addToCart(product)}
-                  />
-                </div>
-              ) : (
-                <button
-                  className="bg-dark-brown/50 hover:bg-light-brown rounded-lg px-3 py-1"
-                  onClick={() => addToCart(product)}
-                >
-                  <Plus className="h-6 w-6 transition-transform duration-200 hover:scale-110 hover:rotate-210 hover:transform" />
-                </button>
-              )}
-
-              <Heart
-                className={`h-6 w-6 cursor-pointer transition-all duration-200 hover:scale-160 ${product.isFavorite ? "fill-red-700" : ""}`}
-                onClick={() => toggleFavourite(product.id)}
-              />
-            </div>
-          </div>
         </div>
       </Link>
+      <div className="my-2 flex items-center justify-between p-4">
+        <span className="text-dark-brown text-[26px] font-light">
+          ${product.price}
+        </span>
+        <div className="flex items-center gap-6">
+          {inCart ? (
+            <div className="flex items-center gap-4">
+              <Minus
+                className="h-6 w-6"
+                onClick={() => decreaseQuantity(product)}
+              />
+              <p>{quantity}</p>
+              <Plus className="h-6 w-6" onClick={() => addToCart(product)} />
+            </div>
+          ) : (
+            <button
+              className="bg-dark-brown/50 hover:bg-light-brown rounded-lg px-3 py-1"
+              onClick={() => addToCart(product)}
+            >
+              <Plus className="h-6 w-6 transition-transform duration-200 hover:scale-110 hover:rotate-210 hover:transform" />
+            </button>
+          )}
+
+          <Heart
+            className={`h-6 w-6 cursor-pointer transition-all duration-200 hover:scale-160 ${product.isFavorite ? "fill-red-700" : ""}`}
+            onClick={() => toggleFavourite(product.id)}
+          />
+        </div>
+      </div>
     </div>
   );
 };
