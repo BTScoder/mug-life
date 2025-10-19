@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
+import NavBar from "./components/NavBar";
 import useFetch from "./hooks/useFetch";
 import Hero from "./components/Hero";
 import Features from "./components/Features";
@@ -35,7 +35,7 @@ function App() {
     <div className="App lg:grid lg:grid-cols-[260px_1fr_1fr]">
       <CartProvider>
         <div className="lg:max-w-sm">
-          <Navbar />
+          <NavBar />
         </div>
         <div className="lg:col-span-2">
           <Routes>
